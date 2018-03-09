@@ -1,3 +1,3 @@
 $(".nav-icon").click(function(){
-  $(".nav-dropdown").slideToggle(1000);
+  $(".nav-dropdown").slideToggle(600);
 });
