@@ -88,7 +88,7 @@ header{
   color:#FFF;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
   .nav-icon{
     display:block;
     color:#E8E8E9;
