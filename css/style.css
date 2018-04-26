@@ -19,8 +19,7 @@ body {
 }
 
 .image {
-  /*background-image: url(https://images.sharefaith.com/images/3/1507570813956_36/img_mouseover3.jpg);*/
-  background: linear-gradient(150deg, #16425b, #81c3d7);
+  background:#274C77;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -90,6 +89,7 @@ body {
 img {
   width: 100%;
   height: auto;
+  padding: 10px;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
 }
@@ -125,17 +125,18 @@ img {
 }
 
 .description {
-  text-align: justify;
+  text-align: center;
   padding: 8.7px;
   font-size: 80%;
   word-break: break-all;
   word-spacing: 1.4px;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
 }
 
 .buttons {
   text-align: center;
   font-size: 80%;
+  margin-bottom: 20px;
 }
 
 .green {
