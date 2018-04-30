@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #FFFAFA;
+  background-color: #fffafa;
 }
 
 .temph1 {
@@ -16,10 +16,11 @@ body {
 
 .tempp {
   text-align: center;
+  padding: 10px;
 }
 
 .image {
-  background:#274C77;
+  background: #274c77;
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
@@ -131,20 +132,13 @@ img {
   word-break: break-all;
   word-spacing: 1.4px;
   padding-bottom: 15px;
+  white-space: wrap;
 }
 
 .buttons {
   text-align: center;
   font-size: 80%;
   margin-bottom: 20px;
-}
-
-.green {
-  background-color: #32936f;
-}
-
-.blue {
-  background-color: #3b60e4;
 }
 
 .buttons a {
@@ -155,6 +149,79 @@ img {
   text-decoration: none;
   color: white;
 }
+
+@media only screen and (max-width: 1000px) {
+  .buttons a {
+    display: block;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  user-select: none;
+}
+
+.letter-x {
+  display: none;
+  position: fixed;
+  top:0;
+  right:0;
+  padding: 15px;
+  user-select: none;
+}
+
+@media only screen and (max-width: 540px) {
+  .menu {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+    position: fixed;
+  }
+
+  .nav ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #070707;
+    opacity: .9;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    opacity: 1;
+  }
+  
+  .nav ul li:not(:last-child) {
+   border-bottom: 2px solid #161616;
+  }
+
+  .nav ul li:not(:first-child) {
+    margin-left: 0;
+  }
+}
+
+.green {
+  background-color: #32936f;
+}
+
+.blue {
+  background-color: #3b60e4;
+}
+
 /* Grid measurements:
  *
  *   960px wide including 12 gutters (half gutters on both edges)
@@ -210,7 +277,7 @@ img {
 }
 
 /* Non-mobile, grid */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
   /* 3 columns, 3/12 in % */
   .col-3 {
     width: 25%;
