@@ -95,6 +95,11 @@ img {
   border-top-left-radius: 7px;
 }
 
+.digit {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
 #projects {
   height: 750px;
 }
@@ -219,14 +224,6 @@ img {
   .nav ul li:not(:first-child) {
     margin-left: 0;
   }
-}
-
-.green {
-  background-color: #32936f;
-}
-
-.blue {
-  background-color: #3b60e4;
 }
 
 /* Grid measurements:
