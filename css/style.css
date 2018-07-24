@@ -1,271 +1,144 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+nav {
+  box-shadow: 0px -16px 22px 13px rgba(110, 110, 110, 0.74);
+}
 
-body {
-  height:100%;
+.nav-item {
+  margin-left: 20px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.cover-photo {
   width: 100%;
-  color: #222;
+  height: auto;
+  filter: brightness(30%);
 }
 
-.navbar {
-  padding: .8rem;
-  -webkit-box-shadow: 0px -1px 17px -1px rgba(0,0,0,0.81);
-  -moz-box-shadow: 0px -1px 17px -1px rgba(0,0,0,0.81);
-  box-shadow: 0px -1px 17px -1px rgba(0,0,0,0.81);
+.image-holder {
+  background-color: green;
 }
 
-.navbar-nav li {
-  padding-right: 20px;
-}
-
-.logoimg {
-  width: 200px;
-}
-
-.carousel-inner img {
-  width:100%;
-  height:100%;
-}
-
-.carousel-caption {
+.cover-content {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  color: white;
+  text-align: center;
+  top: 200px;
+  left: 0;
+  right: 0;
 }
 
-.carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
-  text-shadow: .5px .5px 10px #000;
+.services {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 40px;
 }
 
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 200;
-  text-shadow: .4px .4px 10px #000;
+ h3 {
+    font-size: 100px;
+  }
+  
+  p.lead {
+    font-size: 30px;
+  }
+
+hr {
+  border: 1px solid white;
 }
 
-.jumbotron {
-  padding: 1rem;
-  border-radius: 0;
+.service-text {
+  text-align: left;
 }
 
-.padding {
-  padding-bottom: 2rem;
+i {
+  font-size: 29px;
+  padding: 20px;
 }
 
-.welcome {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 2rem;
+.fa-pencil-ruler {
+  color: #FF9000;
 }
 
-.welcome hr {
-  border-top: 2px solid #b4b4b4;
-  width: 95%;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+.fa-react {
+  color: #78c3fb;
 }
 
-.fa-code {
-  color: #3454D1;
+.fa-html5 {
+  color: #e34f26;
 }
 
-.fa-bold {
-  color: #19297C;
+.fa-css3-alt {
+  color: #1572b6;
 }
 
-.fa-angular {
-  color: #D1345B;
-}
-
-.fa-code, .fa-bold, .fa-angular {
-  font-size: 4rem;
-  margin: 1rem;
-}
-
-.social a {
-  font-size: 4.5rem;
-  padding: 3rem;
-}
-
-.fa-facebook-square {
-  color:#3b5998;
-}
-
-.fa-twitter {
-  color:  #00aced;
-}
-
-.fa-youtube {
-  color: #ff0000;
-}
-
-.fa-google-plus-g {
-  color: #d34836;
-}
-
-.fa-github {
-  color: #333;
-}
-
-footer {
-  background-color: #3f3f3f;
-  color: #d5d5d5;
-  padding-top: 2rem;
-}
-
-hr.light {
-  border-top: 1px solid #d5d5d5;
-  width: 75%;
-  margin-top: .8rem;
-  margin-bottom: 1rem;
-}
-
-/*---Media Queries --*/
 @media (max-width: 992px) {
-  .social a {
-    font-size: 4em;
-    paddng: 2rem;
+  .cover-content {
+    position: absolute;
+    text-align: center;
+    top: 180px;
+    left: 0;
+    right: 0;
   }
-  .carousel-caption {
-  position: absolute;
-  top: 45%;
-}
-
-.carousel-caption h1 {
-  font-size: 400%;
-  text-transform: uppercase;
-  text-shadow: .5px .5px 10px #000;
-}
-
-.carousel-caption h3 {
-  font-size: 175%;
-  font-weight: 200;
-  text-shadow: .4px .4px 10px #000;
-}
   
-  .carousel-caption .btn {
-  font-size:110%;
-    padding: 4px 8px;
-}
+  h3 {
+    font-size: 75px;
   }
+  
+  p.lead {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 768px) {
-  .social a {
-    font-size: 2.5em;
-    paddng: 1.2rem;
+  .cover-content {
+    position: absolute;
+    text-align: center;
+    top: 160px;
+    left: 0;
+    right: 0;
   }
   
-  .carousel-caption {
-  position: absolute;
-  top: 45%;
-}
-
-.carousel-caption h1 {
-  font-size: 300%;
-  text-transform: uppercase;
-  text-shadow: .5px .5px 10px #000;
-}
-
-.carousel-caption h3 {
-  font-size: 150%;
-  font-weight: 200;
-  text-shadow: .4px .4px 10px #000;
-}
+  h3 {
+    font-size: 50px;
+  }
   
-  .carousel-caption .btn {
-  font-size:70%;
-    padding: 4px 8px;
+  p.lead {
+    font-size: 20px;
+  }
 }
-}
+
 @media (max-width: 576px) {
-  .social a {
-    font-size: 2em;
-    paddng: .7rem;
+  .cover-content {
+    top: 120px;
   }
   
-  .carousel-caption {
-  position: absolute;
-  top: 35%;
-}
-
-.carousel-caption h1 {
-  font-size: 150%;
-  text-transform: uppercase;
-  text-shadow: .5px .5px 10px #000;
-}
-
-.carousel-caption h3 {
-  font-size: 70%;
-  font-weight: 200;
-  text-shadow: .4px .4px 10px #000;
-}
+  h3 {
+    font-size: 30px;
+  }
   
-  .carousel-caption .btn {
-  font-size:20%;
-    padding: 3px 7px;
-}
-}
-
-
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
+  p.lead {
+    font-size: 15px;
+  }
 }
 
-
-
-
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
+@media (max-width: 460px) {
+  .cover-content {
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    left: 0;
+    right: 0;
+  }
+  
+  h3 {
+    font-size: 25px;
+  }
+  
+  p.lead {
+    font-size: 15px;
+  }
+}
